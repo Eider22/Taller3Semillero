@@ -10,10 +10,6 @@ public class Main {
 		Reproductor wav = new Wav(180, 175, "Robert Iglesias", "Rock");
 		Reproductor mp4 = new Mp4(205, 190, "Alfredo Castro", "Drama");
 
-		mp3.reproducir();
-		wav.reproducir();
-		mp4.reproducir();
-
 		List<Reproductor> reproductores = new ArrayList<Reproductor>();
 		reproductores.add(mp3);
 		reproductores.add(wav);
