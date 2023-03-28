@@ -5,12 +5,10 @@ import taller3.banco.excepciones.MaximoRetirosException;
 
 public class Corriente extends Cuenta {
 	private int numeroRetiros;
-	private int numeroDepositos;
 
 	public Corriente(String numeroCuenta, double saldo, Propietario propietario) {
 		super(numeroCuenta, saldo, propietario);
 		this.numeroRetiros = 0;
-		this.numeroDepositos = 0;
 	}
 
 	@Override
@@ -38,13 +36,5 @@ public class Corriente extends Cuenta {
 
 	public void setNumeroRetiros(int numeroRetiros) {
 		this.numeroRetiros = numeroRetiros;
-	}
-
-	public int getNumeroDepositos() {
-		return numeroDepositos;
-	}
-
-	public void setNumeroDepositos(int numeroDepositos) {
-		this.numeroDepositos = numeroDepositos;
 	}
 }
